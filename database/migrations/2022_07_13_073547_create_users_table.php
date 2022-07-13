@@ -27,8 +27,6 @@ return new class extends Migration
             $table->boolean('verified');
             $table->string('verification_code');
 
-            $table->integer('role_id');
-
             $table->timestamps();
         });
     }

@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('email_change_requests', function (Blueprint $table) {
             $table->id();
+
+            $table->string('new_email');
+            $table->string('verification_code');
+
             $table->timestamps();
         });
     }

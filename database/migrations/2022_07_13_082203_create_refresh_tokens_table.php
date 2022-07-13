@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('refresh_tokens', function (Blueprint $table) {
             $table->id();
+
+            $table->integer('count');
+
             $table->timestamps();
         });
     }
