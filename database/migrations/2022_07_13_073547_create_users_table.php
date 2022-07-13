@@ -15,6 +15,20 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+
+            $table->string('email');
+            $table->string('name');
+            $table->string('postcode');
+            $table->string('city');
+            $table->string('phone');
+
+            $table->string('hashed_pass');
+
+            $table->boolean('verified');
+            $table->string('verification_code');
+
+            $table->integer('role_id');
+
             $table->timestamps();
         });
     }
